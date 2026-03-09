@@ -42,3 +42,41 @@
       </div>
     </div>
   </header>
+
+  <section>
+    <div id="loginPage" class="flex items-center justify-center h-screen">
+      <div class="p-8 bg-white shadow w-[520px] rounded-xl">
+  
+        <div class="flex flex-col items-center gap-3">
+          <img src="assets/github-logo.png" alt="GitHub Logo" />
+          <h1 class="flex mb-2 text-2xl font-bold">
+            GitHub Issues Tracker
+          </h1>
+        </div>
+        <p class="mb-6 text-center text-gray-500">
+          Sign in to manage your issues
+        </p>
+        <label class="mb-[6px] block font-medium text-[16px]" for="username">
+          Username
+        </label>
+        <input id="username" class="w-full p-2 border rounded" placeholder="Enter Username" />
+        <p class="mb-4 text-[#4A00FF]">Default: admin</p>
+        <label class="mb-[6px] block font-medium text-[16px]" for="password">
+          Password
+        </label>
+        <input id="password" type="password" class="w-full p-2 border rounded" placeholder="Enter Password" />
+        <p class="mb-4 text-[#4A00FF]">Default: admin123</p>
+        <button onclick="login()" class="w-full py-2 text-white bg-[#4A00FF] rounded mb-[24px]">
+          Sign In
+        </button>
+        <p class="text-[16px] text-center text-[#1F2937]">or</p>
+        <p class="text-[16px] text-center text-[#64748B] font-[16px]">
+          Demo Credentials:
+        </p>
+        <p class="mt-4 text-sm text-center text-gray-500 font-extralight">
+          <span class="font-semibold">Username:</span> admin <br />
+          <span class="font-semibold">Password:</span> admin123
+        </p>
+      </div>
+    </div>
+  </section>
