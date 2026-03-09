@@ -46,7 +46,7 @@
   <section>
     <div id="loginPage" class="flex items-center justify-center h-screen">
       <div class="p-8 bg-white shadow w-[520px] rounded-xl">
-  
+
         <div class="flex flex-col items-center gap-3">
           <img src="assets/github-logo.png" alt="GitHub Logo" />
           <h1 class="flex mb-2 text-2xl font-bold">
@@ -82,55 +82,54 @@
   </section>
 
   <div id="mainPage" class="hidden p-8">
-  
+
     <div class="flex gap-3 p-6 mb-4 bg-white shadow rounded-xl">
       <button onclick="switchTab('all')" id="tab-all" class="px-4 py-2 text-white bg-[#4A00FF] rounded tabBtn">
         All
       </button>
-  
+
       <button onclick="switchTab('open')" id="tab-open" class="px-4 py-2 bg-gray-200 rounded tabBtn">
         Open
       </button>
-  
+
       <button onclick="switchTab('closed')" id="tab-closed" class="px-4 py-2 bg-gray-200 rounded tabBtn">
         Closed
       </button>
     </div>
-  
+
     <div class="flex items-center justify-between p-6 mb-6 bg-white shadow rounded-xl">
       <div class="flex items-center gap-3">
         <img src="assets/Aperture.png" alt="" />
-  
+
         <div>
           <span id="issueCount" class="text-xl font-semibold text-[#1F2937]">
             0 Issues
           </span>
           <br />
-  
+
           <span class="text-[#64748B] font-[16px]">
             Track and manage your project issues
           </span>
         </div>
       </div>
-  
+
       <div class="flex gap-4 text-sm">
         <div class="flex items-center gap-2">
           <div class="w-3 h-3 bg-green-500 rounded-full"></div>
           Open
         </div>
-  
+
         <div class="flex items-center gap-2">
           <div class="w-3 h-3 bg-purple-500 rounded-full"></div>
           Closed
         </div>
       </div>
     </div>
-  
-  
+
     <div id="loading" class="hidden mb-6 text-center">
       Loading...
     </div>
-  
+
     <div id="issuesContainer" class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4"></div>
   </div>
 
@@ -146,7 +145,6 @@
         <p id="modalDate">22/02/2026</p>
       </div>
       <div id="modalBadges" class="flex flex-wrap gap-2 mt-5 mb-3">
-        <!-- Badges will be inserted here dynamically -->
       </div>
       <p id="modalDic">The navigation menu doesn't collapse properly on mobile devices. Need to fix the responsive
         behavior.</p>
@@ -162,15 +160,14 @@
       </div>
       <div class="modal-action">
         <form method="dialog">
-          <!-- if there is a button in form, it will close the modal -->
           <button class="btn">Close</button>
         </form>
       </div>
     </div>
   </dialog>
   </div>
-  
+
   <script src="index.js"></script>
-  </body>
-  
-  </html>
+</body>
+
+</html>
