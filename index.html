@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Github Issue Tracker</title>
+
+  <!-- tailwindcss -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <style>
+    * {
+      font-family: "Geist", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-[#F8FAFC]">
+
+  <header class="bg-white">
+    <div class="flex items-center justify-between w-11/12 py-[17px] mx-auto">
+      <div class="flex items-center gap-1">
+        <img class="w-[36px]" src="./assets/github-logo.png" alt="GitHub Logo" />
+        <h1 class="text-xl font-bold text-[#1F2937]">
+          GitHub Issues Tracker
+        </h1>
+      </div>
+
+      <div class="flex gap-2">
+        <input id="searchInput" placeholder="Search issues..." class="p-2 border rounded" />
+        <button onclick="searchIssue()" class="px-3 text-white bg-[#4A00FF] rounded">
+          + New Issue
+        </button>
+      </div>
+    </div>
+  </header>
