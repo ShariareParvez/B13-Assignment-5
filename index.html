@@ -133,3 +133,44 @@
   
     <div id="issuesContainer" class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4"></div>
   </div>
+
+  <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+  <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+    <div class="p-8 modal-box">
+      <h3 id="modalTitle" class="font-bold text-[#24px]"></h3>
+      <div class="flex items-center gap-2 mt-2">
+        <p id="modalStatus" class="bg-[#00A96E] inline-block px-3 py-1 text-white rounded-full">Open</p>
+        <p>.</p>
+        <p id="modalOpenedBy">Opened by Fahim Ahmed</p>
+        <p>.</p>
+        <p id="modalDate">22/02/2026</p>
+      </div>
+      <div id="modalBadges" class="flex flex-wrap gap-2 mt-5 mb-3">
+        <!-- Badges will be inserted here dynamically -->
+      </div>
+      <p id="modalDic">The navigation menu doesn't collapse properly on mobile devices. Need to fix the responsive
+        behavior.</p>
+      <div class="flex items-center gap-20 mt-5 p-[16px] bg-[#F8FAFC] rounded-xl">
+        <div>
+          <p>Assignee:</p>
+          <p>Fahim Ahmed</p>
+        </div>
+        <div>
+          <p class="mb-1 text-sm font-medium text-gray-600">Priority</p>
+          <p id="Priority" class="inline-block px-3 py-1 font-medium text-white bg-red-600 rounded-full">HIGH</p>
+        </div>
+      </div>
+      <div class="modal-action">
+        <form method="dialog">
+          <!-- if there is a button in form, it will close the modal -->
+          <button class="btn">Close</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+  </div>
+  
+  <script src="index.js"></script>
+  </body>
+  
+  </html>
